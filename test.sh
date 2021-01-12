@@ -11,4 +11,10 @@ elif [ $(command -v dnf) ]; then
     dnf install -y nodejs
     dnf install -y curl
     exit 0
+# Detect yum if scentOs or rhel
+elif [ $(command -v yum) ]; then
+    yum install -y wget
+    yum install -y nodejs
+    yum install -y curl
+    exit 0 
 fi
