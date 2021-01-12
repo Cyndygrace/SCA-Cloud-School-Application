@@ -17,4 +17,10 @@ elif [ $(command -v yum) ]; then
     yum install -y nodejs
     yum install -y curl
     exit 0 
+# Detect brew if macOS   
+elif [ $(command -v brew) ]; then
+    brew install -y wget
+    brew install -y nodejs
+    brew install -y curl
+    exit 0
 fi
