@@ -6,14 +6,14 @@ Command-line interface (CLI) application which will install the following softwa
 
 # How to run the script
 
-** Clone Repo **
-** On the terminal, cd into directory of the file name (test.sh) **
+** On the terminal, clone Repo **
+** cd into directory of the file name (test.sh) **
 ** In termianl, Run command <Sudo sh test.sh> to run script and install packages **.
 
 # How the script works
 
 ** If each software is already installed, The program will end without installing. **
-** If any of the software is not installed, Depending on the operation system, the appropriate command is used to install and update the software.
+\*\* If any of the software is not installed, Depending on the operation system, the appropriate command is used to install and update the software.
 
 # Operating system and command used
 
