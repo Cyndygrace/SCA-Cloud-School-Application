@@ -1,3 +1,7 @@
+#!/bin/bash
+#if all 3 is installed, end program
+if [ $(command -v wget && command -v curl && command -v nodejs) ]; then
+    exit 0
 # Detect apt if Ubuntu or debian
 elif [ $(command -v apt-get) ]; then
     apt-get update
@@ -23,4 +27,6 @@ elif [ $(command -v brew) ]; then
     brew install -y nodejs
     brew install -y curl
     exit 0
+else
+    echo "package installation not found"
 fi
